@@ -1,0 +1,8 @@
+scaling=fill
+show-failed-attempts
+ignore-empty-password
+daemonize
+ring-color=#ff00ff
+inside-color=#00ffff
+font=IosevkaTermSlabNerdFont
+image=$HOME/Pictures/Wallpapers/Untitledcity.png
