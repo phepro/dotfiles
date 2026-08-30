@@ -16,4 +16,4 @@ sudo rm -r ~/.config/rofi/
 sudo rm -r ~/.config/mako/
 sudo rm -r ~/.swaylock/
 
-stow -d ~/dotfiles -t ~/ dotfiles
+stow -d ~/dotfiles -t ~/ .
