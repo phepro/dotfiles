@@ -43,8 +43,11 @@ imv = [
     { run = "imv %s", desc = "Imv", for= "unix", block = true },
 ]
 
-LibOfCalc = [
+libofcalc = [
     { run = "libreoffice --calc %s", desc = "LibOffCalc" }
+]
+lodraw = [
+    { run = "libreoffice --draw %s", desc = "LibreOffice draw", for = "unix", block = true },
 ]
 
 play = [
@@ -78,9 +81,9 @@ rules = [
 	{ url = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
-    { mime = "text/csv", use = [ "edit", "LibOfCalc", "reveal" ] },
+    { mime = "text/plain", use = [ "edit", "libofcalc", "reveal" ] },
 	# Image
-	{ mime = "image/*", use = [ "open", "gimp", "imv", "reveal" ] },
+	{ mime = "image/*", use = [ "open", "gimp", "imv", "lodraw", "reveal" ] },
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Code
