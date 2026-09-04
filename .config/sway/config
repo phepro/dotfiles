@@ -22,7 +22,7 @@ set $menu rofi -show drun
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg $HOME/Pictures/Wallpapers/Untitledcity.png fill
+output * bg $HOME/Pictures/Wallpapers/Tux_dark.png fill
 #
 # Example configuration:
 #
@@ -55,6 +55,9 @@ client.unfocused #ff00ff #ff00ff #00ffff
 # font pango:Mx437 EuroPC Mono 12
 font pango:IosevkaTermSlabNerdFont Bold 12
  
+# gaps
+# gaps inner 10
+# gaps outer 10
 
 ### Input configuration
 #
@@ -62,6 +65,7 @@ font pango:IosevkaTermSlabNerdFont Bold 12
 
 input type:keyboard {
     xkb_numlock enabled
+    xkb_options compose:ralt
 }
 
 input type:touchpad {
