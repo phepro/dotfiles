@@ -90,8 +90,8 @@ exec waybar
 # exec qs
 # exec waypaper --restore
 
-exec nm-applet
-exec blueman-applet
+# exec nm-applet
+# exec blueman-applet
 
 exec wl-paste --type text --watch cliphist store
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
